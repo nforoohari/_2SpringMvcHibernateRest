@@ -1,8 +1,29 @@
+### Send GET request
+GET http://localhost:8080/api/v1/products
+
+### Send GET request
+GET http://localhost:8080/api/v1/products/2
+
 ### Send POST request with json body
-GET http://localhost:8080/10/m4
+POST http://localhost:8080/api/v1/products
 Content-Type: application/json
 
 {
-  "id": 999,
-  "name": "content"
+  "name": "Car",
+  "description": "Blue",
+  "price": 1000
 }
+
+### Send PUT request with json body
+PUT http://localhost:8080/api/v1/products
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Car",
+  "description": "Red",
+  "price": 2000
+}
+
+### Send Delete request
+DELETE http://localhost:8080/api/v1/products/4

@@ -4,14 +4,12 @@ import ir.digixo.dao.ProductDao;
 import ir.digixo.entity.Product;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {
 
-
-    private ProductDao productDao;
+    private final ProductDao productDao;
 
     public ProductServiceImpl(ProductDao productDao) {
         this.productDao = productDao;

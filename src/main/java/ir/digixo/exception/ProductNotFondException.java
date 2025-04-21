@@ -1,4 +1,4 @@
 package ir.digixo.exception;
 
-public class ProductNotFondException extends Exception{
+public class ProductNotFondException extends Exception {
 }
